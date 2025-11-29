@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #222;
+  line-height: 1.6;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+/* ---------- Nav & footer ---------- */
+nav {
+  background: #ffffff;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #999;
+}
+

@@ -1,0 +1,236 @@
+.about-page {
+  width: 100%;
+  color: #fff;
+  background-color: #121212;
+  min-height: 100vh;
+}
+
+/* ---------- HERO / BANNER ---------- */
+.about-hero {
+  width: 100%;
+  height: 640px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  background: linear-gradient(120deg, #14141a 0%, #1c1c25 100%);
+}
+
+.about-hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(to bottom, rgba(18,18,18,0), #121212);
+  pointer-events: none;
+}
+
+.about-hero-content h1 {
+  font-size: 72px;
+  margin-bottom: 20px;
+  text-shadow: 16px 16px 64px rgba(0,0,0,0.6);
+}
+
+.about-hero-content p {
+  font-size: 32px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-shadow: 8px 8px 48px rgba(0,0,0,0.6);
+}
+
+/* ---------- MISSION ---------- */
+.about-mission {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-mission h2 {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.about-mission p {
+  font-size: 26px;
+  line-height: 38px;
+}
+
+/* ---------- OFFICE / WORKSPACE ---------- */
+.about-office {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-office-overlay {
+  background: rgba(18,18,18,0.6);
+  padding: 40px 30px;
+  border-radius: 12px;
+}
+
+.about-office-overlay h2 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.about-office-overlay p {
+  font-size: 22px;
+}
+
+/* ---------- TIMELINE ---------- */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 40px;
+  max-width: 800px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #444;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 0 40px;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+
+.timeline-item:nth-child(odd)::before {
+  right: -14px;
+}
+
+.timeline-item:nth-child(even)::before {
+  left: -14px;
+}
+
+.timeline-item .year {
+  font-size: 28px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.timeline-item p {
+  font-size: 22px;
+  line-height: 32px;
+  color: #ccc;
+  display: inline-block;
+  max-width: 250px;
+}
+
+/* ---------- GALLERY CARD ---------- */
+.about-gallery-card {
+  margin-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+  background: linear-gradient(120deg, #14141a 0%, #1c1c25 100%);
+  transition: background 0.5s ease, transform 0.3s, opacity 0.3s;
+  cursor: pointer;
+}
+
+.about-gallery-card:hover {
+  background: linear-gradient(120deg, #14141a 0%, #1c1c25 100%);
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  /* ---------- HERO / BANNER ---------- */
+  .about-hero {
+    height: 360px;
+    padding: 0 10px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 36px; 
+    margin-bottom: 12px;
+    text-shadow: 8px 8px 32px rgba(0,0,0,0.6);
+  }
+
+  .about-hero-content p {
+    font-size: 18px;
+    max-width: 90%;
+    text-shadow: 4px 4px 24px rgba(0,0,0,0.6);
+  }
+
+  /* ---------- MISSION ---------- */
+  .about-mission {
+    padding: 40px 15px;
+  }
+
+  .about-mission h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .about-mission p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  /* ---------- OFFICE / WORKSPACE ---------- */
+  .about-office {
+    height: 280px;
+    padding: 0 10px;
+  }
+
+  .about-office-overlay {
+    padding: 20px 15px;
+  }
+
+  .about-office-overlay h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .about-office-overlay p {
+    font-size: 16px;
+  }
+
+  /* ---------- GALLERY CARD ---------- */
+  .about-gallery-card {
+    margin-top: 30px;
+    padding-bottom: 30px;
+  }
+}
